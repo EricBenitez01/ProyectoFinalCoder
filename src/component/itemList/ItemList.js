@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react'
 import {useState} from "react";
-import Item from "../Item";
+import Item from "../item/Item";
 import axios from "axios";
+import "./ItemList.css";
+
+
 function ItemList() {
-    const [items, setItems] = useState({});
+    const [items, setItems] = useState([]);
     
     
     useEffect( () => {
@@ -12,18 +15,18 @@ function ItemList() {
     }, []); 
     console.log(items);
 
-  return (
-    <div>
-        {items.map((item) => {
-            return(
-                <div key = {item.id}>
-                    <Item data={item} /> 
-                </div>
-            );
-        })
-        }
-    </div>
-  );
+    return(
+        <div className="cardList">
+            {items.map( (item) => {
+                return( 
+                    <div key={item.id}>
+                        <Item data={item} />
+                    </div>
+                );
+            }
+            )}
+        </div>
+    );
 };
 
 export default ItemList;

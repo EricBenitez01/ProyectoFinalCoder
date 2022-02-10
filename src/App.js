@@ -9,7 +9,8 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <p>Detalle de Productokgujcfykfgkjutcfyuhk</p>
+      <p>Peliculas Ghibli</p>
+      <ItemList/>
     </div>
     <Routes>
       <Route  path="/" element={<ItemList/>}  />
