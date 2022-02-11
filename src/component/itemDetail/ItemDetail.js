@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState,  } from 'react';
 import {useParams} from "react-router";
 import Item from '../item/Item';
-
+import "./ItemDetail.css";
 const ItemDetail = () => {
 const [detail, setDetail] = useState([]);
 
@@ -15,18 +15,19 @@ const detailId = id.id
   }, [detailId]);
 
 
-
+  const myStyle={
+    backgroundImage: `url(${detail.movie_banner})`,
+    minHeight: "2500px",
+  };   
+  
+  
   return(
-    <div>
-      {detail.map( (detail1) => {
-        return(
-          <div key={detail1.id}>
-            <Item data={detail1} />
-          </div>
-        );
-      }
+    <div className='Detail' key={detail.id}>
+      <body className='bb'  style={myStyle}>
+        <h1 className='title'>{detail.title}</h1>
+      <Item  data={detail} />
       
-      )}
+      </body>
     </div>
   );
   
