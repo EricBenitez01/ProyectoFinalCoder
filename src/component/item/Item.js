@@ -10,7 +10,7 @@ const Item = ({data}) => {
     <Card sx={{ maxWidth: 345, margin: 10 }}>
       <CardMedia
         component="img"
-        height="140"
+        height="230"
         image={data.image}
         alt="img"
       />

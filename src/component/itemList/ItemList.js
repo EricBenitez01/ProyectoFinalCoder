@@ -3,7 +3,7 @@ import {useState} from "react";
 import Item from "../item/Item";
 import axios from "axios";
 import "./ItemList.css";
-
+import { Link } from 'react-router-dom';
 
 function ItemList() {
     const [items, setItems] = useState([]);
@@ -20,7 +20,9 @@ function ItemList() {
             {items.map( (item) => {
                 return( 
                     <div key={item.id}>
+                        <Link to={`/detail/${item.id}`}>
                         <Item data={item} />
+                        </Link>
                     </div>
                 );
             }

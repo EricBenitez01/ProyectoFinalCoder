@@ -10,7 +10,6 @@ function App() {
     <Router>
     <div className="App">
       <p>Peliculas Ghibli</p>
-      <ItemList/>
     </div>
     <Routes>
       <Route  path="/" element={<ItemList/>}  />
