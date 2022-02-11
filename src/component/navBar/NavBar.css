@@ -1,3 +1,7 @@
+.R{
+    width: 100%;
+}
+
 .roberto{
     background-color: rgb(69, 36, 255);
     opacity: 100%;
@@ -7,11 +11,16 @@
     margin: 0px;
     height: 60px;
     justify-content: space-around;
+    align-items: center;
     
 }
 .item{
     display: flex;
     align-items: center;
     color: white;
-
+    width: 20%;
+}
+.logo{
+    height: 60px;
+    width: auto;
 }
