@@ -1,0 +1,17 @@
+.roberto{
+    background-color: rgb(69, 36, 255);
+    opacity: 100%;
+    color: rgb(245, 47, 218);
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    height: 60px;
+    justify-content: space-around;
+    
+}
+.item{
+    display: flex;
+    align-items: center;
+    
+
+}

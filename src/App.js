@@ -2,6 +2,7 @@ import './App.css';
 import ItemDetail from "./component/itemDetail/ItemDetail";
 import {BrowserRouter as Router, Route, Routes } from "react-router-dom"; 
 import ItemList from "./component/itemList/ItemList";
+import NavBar from './component/navBar/NavBar';
 
 
 
@@ -9,6 +10,7 @@ function App() {
   return (
     <Router>
     <div className="App">
+      <NavBar/>
       <p className='header'>Peliculas Ghibli</p>
     </div>
     <Routes>
