@@ -4,11 +4,11 @@ function NavBar(props) {
     return (
         <nav>  
             <ul className="roberto">
-            <Link to="/"><li ><img className="logo" src="https://www.dafont.com/forum/attach/orig/3/6/366983.png" alt="logo" width={"16%"}/></li></Link>
-            <Link to="/"><li className="item">Home</li></Link>
-            <Link to="//category/:id"><li className="item">Categoria</li></Link>
-            <Link to="/"><li className="item">Info</li></Link>
-            <Link to="/"><li className="item">Contactos</li></Link>
+            <li ><Link to="/"><img className="logo" src="https://www.dafont.com/forum/attach/orig/3/6/366983.png" alt="logo" width={"16%"}/></Link></li>
+            <li ><Link className="item"to="/">Home</Link></li>
+            <li ><Link className="item"to="/category/:id">Categoria</Link></li>
+            <li ><Link className="item"to="/">Info</Link></li>
+            <li ><Link  className="item"to="/">Contactos</Link></li>
             </ul>
         </nav>
     );
