@@ -18,9 +18,22 @@
     display: flex;
     align-items: center;
     color: white;
-    width: 20%;
+    justify-content: center;
+    padding: 4px;
+    border-radius: 17%;
+    font-size: 17px;
+    text-decoration: none;
+}
+.item:hover{
+    color: rgb(88, 252, 252);
+    background-color: rgb(104, 104, 250);
+    border: 1px solid rgb(88, 252, 252);
 }
 .logo{
-    height: 60px;
+    height: 63px;
     width: auto;
+}
+.logo:hover{
+    color: rgba(91, 255, 247, 0.781);
+    background-color: rgb(104, 104, 250);
 }

@@ -1,10 +1,11 @@
 .App {
   text-align: center;
 }
-.header{
+.P{
   height: 30px;
   color: white;
   background-color: rgb(36, 3, 182);
   padding: 1%;
   margin: 0px;
+  font-size: 18px;
 }

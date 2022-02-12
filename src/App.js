@@ -11,7 +11,7 @@ function App() {
     <Router>
     <div className="App">
       <NavBar/>
-      <p className='header'>Peliculas Ghibli</p>
+      <p className='P'>Peliculas Ghibli</p>
     </div>
     <Routes>
       <Route  path="/" element={<ItemList/>}  />
